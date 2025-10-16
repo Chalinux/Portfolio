@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Portfolio 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personal moderno construido con Next.js 14, App Router y Tailwind CSS. Incluye animaciones con Framer Motion, datos de proyectos desacoplados y un efecto interactivo que reacciona al cursor.
 
-## Available Scripts
+## Requisitos previos
 
-In the project directory, you can run:
+- Node.js 18.18 o superior
+- npm 9+ (o pnpm/yarn si preferís otro gestor)
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Desarrollo local
 
-### `npm test`
+```bash
+npm run dev
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La app se monta en [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
+## Comandos disponibles
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Comando            | Descripción                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| `npm run dev`      | Inicia el entorno de desarrollo con hot reload.               |
+| `npm run lint`     | Ejecuta ESLint sobre el código del proyecto.                  |
+| `npm run type-check` | Valida los tipos de TypeScript sin generar archivos.       |
+| `npm run build`    | Genera el build optimizado listo para producción/Vercel.      |
+| `npm run start`    | Sirve la app compilada (ideal para testing local del build).  |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Personalización rápida
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Datos personales**: editá `data/profile.ts` con tu nombre, rol, bio, links y skills.
+- **Proyectos**: actualizá `data/projects.json` (título, descripción, imagen, links a demo/código y stack).
+- **Imágenes**: reemplazá los SVG de `public/images/projects` por screenshots reales.
 
-### `npm run eject`
+La UI se actualiza automáticamente al modificar estos archivos; no hay que tocar componentes para cambiar contenido.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deploy en Vercel
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Hacé login en [Vercel](https://vercel.com) y creá un nuevo proyecto desde este repositorio.
+2. Configurá el framework como **Next.js** (se detecta automáticamente).
+3. Asegurate de que la versión de Node sea 18 o superior.
+4. Deploy automático con los comandos por defecto (`npm install`, `npm run build`, `npm start`).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Buenas prácticas incluidas
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Arquitectura modular con Server Components y Client Components según la interacción necesaria.
+- Tailwind CSS configurado con `@tailwindcss/postcss` y diseño dark elegante responsive.
+- Animaciones suaves con Framer Motion en navegación, tarjetas y secciones.
+- Datos desacoplados en JSON/TS para mantenimiento sencillo.
+- Estructura lista para deploy sin ajustes adicionales en Vercel.
 
-## Learn More
+## Licencia
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Uso personal. Actualizá la licencia si necesitás compartir o publicar el código.

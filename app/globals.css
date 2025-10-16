@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: theme('colors.background');
+}
+
+body {
+  @apply font-sans bg-background text-foreground antialiased;
+}
+
+::selection {
+  @apply bg-accent/60 text-foreground;
+}
+
+section {
+  @apply scroll-mt-24;
+}
