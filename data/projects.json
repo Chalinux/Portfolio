@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "aurora-dashboard",
+    "title": "Aurora Dashboard",
+    "description": "Panel de control modular con visualizaciones en tiempo real y theming adaptable.",
+    "image": "/images/projects/project-aurora.svg",
+    "demoUrl": "https://example.com/aurora",
+    "codeUrl": "https://github.com/tuusuario/aurora-dashboard",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "D3.js"]
+  },
+  {
+    "slug": "nebula-commerce",
+    "title": "Nebula Commerce",
+    "description": "Headless e-commerce optimizado para Core Web Vitals con catálogo dinámico.",
+    "image": "/images/projects/project-nebula.svg",
+    "demoUrl": "https://example.com/nebula",
+    "codeUrl": "https://github.com/tuusuario/nebula-commerce",
+    "tech": ["Next.js", "GraphQL", "Stripe", "Vercel"]
+  },
+  {
+    "slug": "spectra-design-system",
+    "title": "Spectra Design System",
+    "description": "Sistema de diseño accesible con componentes escalables y documentación interactiva.",
+    "image": "/images/projects/project-spectra.svg",
+    "demoUrl": "https://example.com/spectra",
+    "codeUrl": "https://github.com/tuusuario/spectra-design-system",
+    "tech": ["Storybook", "Radix UI", "Tailwind CSS", "Vitest"]
+  }
+]
